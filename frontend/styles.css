@@ -216,12 +216,7 @@ label{
     padding-bottom: 2%;
 }
 
-.heading span {
-    font-style: italic;
-    
-    
 
-}
 
 .r{
     color: rgb(243, 6,6);
@@ -245,9 +240,7 @@ label{
     transition: 400ms;
 
 }
-.profile:hover .profile-img{
-    filter: grayscale(0);
-}
+
 .user-name {
     margin-top: 30px;
     font-size: 35px;

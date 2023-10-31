@@ -65,7 +65,7 @@
                 <br />
                 <br />
 
-                <form action="" method="GET" accept-charset="UTF-8" autocomplete="on" enctype="text/plain">
+                <form  id="myform" method="GET" accept-charset="UTF-8" autocomplete="on" enctype="text/plain">
                     <label for="bool"> Are you a NEUB Student ? </label>
                     <input type="checkbox" name="" id="bool">
                     <br />
@@ -82,12 +82,12 @@
 
 
                     <label for="uid"> Your ID : </label>
-                    <input type="number" id="uid" name="" placeholder=" YOUR UID" value="0562220005101030">
+                    <input type="number" id="uid" name="uid" placeholder=" YOUR UID" value="0562220005101030">
 
 
                     <div class="btn">
                         <button class=" bt btn1" type="reset">Reset </button>
-                        <button class=" bt btn2" type="submit" onclick="update();">Check </button>
+                        <button class=" bt btn2" type="submit" onclick="handleClick(event);">Check </button>
                     </div>
             </div>
         </div>
