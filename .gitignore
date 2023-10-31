@@ -1,4 +1,4 @@
-.env
-/images
-/backend/node_modules
+
+images/
+
 
