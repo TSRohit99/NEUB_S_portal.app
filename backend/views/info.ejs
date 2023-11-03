@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Information</title>
+    <style>
+        /* *{
+            margin: 0;
+            padding: 0;
+        } */
+
+        body{
+            background-color: #a28f76;
+        }
+        .container {
+            /* display: flex;   */
+            background-color:#77869a;;
+            border-radius: 5%;
+            margin-left: 20% ;
+            margin-right: 20%;
+        }
+        span{
+            color: rgb(77, 3, 3);
+        }
+
+        hr{
+            width: 70%;
+        }
+
+        ul{
+            
+            list-style: none;
+            margin-left: 15%;
+            font-size: 1.85rem;
+        }
+        li{
+            padding-bottom: 4%;
+        }
+
+        .Copyright div {
+    
+    text-align: center;
+    padding: 5px 0;
+    background: #a28f76;
+    margin-top: 8px;
+
+}
+
+.Copyright div p{
+    font-family: 'Lato', sans-serif;
+    font-size: 17px;
+    color: #14090a;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+    </style>
+</head>
+<body>
+    <h1 style="text-align: center; font-size: 3.5rem;">Welcome to <span> NEUB Backend Portal</span></h1>
+    <hr />
+    <div class="container">
+        <h3 id="name" style="text-align: center; font-size: 1.9rem; padding-top: 2%; "> Information of <%= name %> </h3>
+        <ul>
+            <li id="name">Name : <%= name %> </li>
+            <li id="uid">Id : <%= uid %></li>
+            <li id="email">E-mail : <%= email %></li>
+            <li id="bg">Blood Group: <%= bg %></li>
+            <li id="sem">Semester : <%= sem %></li>
+            <li id="cgpa">CGPA : <%= cgpa %></li>
+            <li id="status">IsContinuing : <%= status %></li>
+        </ul>
+    </div>
+
+    <section class="Copyright">
+        <div>
+            <p>©2023 <a href="https://tsrohit99.github.io/">Rohit Sen </a>| All Rights Reserved</p>
+        </div>
+    </section>
+</body>
+</html>
