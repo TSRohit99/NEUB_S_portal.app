@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Result</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            margin: 0;
+            padding: 0;
+        }
+
+        h1 {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        table {
+            width: 80%;
+            margin: 20px auto;
+            border-collapse: collapse;
+        }
+
+        th, td {
+            border: 1px solid #ddd;
+            padding: 10px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #4CAF50;
+            color: white;
+        }
+        .Copyright div {
+    
+    text-align: center;
+    padding: 5px 0;
+    margin-top: 8px;
+
+}
+
+.Copyright div p{
+    font-family: 'Lato', sans-serif;
+    font-size: 17px;
+
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+    </style>
+</head>
+<body>
+    <h1 style="text-align: center;" id="name">Result of : <%= name %> </h1>
+
+
+    <h2 style="text-align: center;">Course Details</h2>
+    
+    <table>
+        <thead>
+            <tr>
+                <th>Course Title</th>
+                <th>Credit</th>
+                <th>Grade</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Data Structure</td>
+                <td id="ds_c"><%= ds_c %></td>
+                <td id="ds"><%= ds %></td>
+            </tr>
+            <tr>
+                <td>Data Structure Lab</td>
+                <td id="dsLab_c"><%= dsLab_c %></td>
+                <td id="dsLab"><%= dsLab %></td>
+                
+            </tr>
+            <tr>
+                <td>DLD</td>
+                <<td id="dld_c"><%= dld_c %></td>
+                <<td id="dld"><%= dld %></td>
+            </tr>
+            <tr>
+                <td>DLD Lab</td>
+                <td id="dldLab_c"><%= dldLab_c %></td>
+                <td id="dldLab"><%= dldLab %></td>
+            </tr>
+            <tr>
+                <td>EDC</td>
+                <td id="bee_c"><%= bee_c %></td>
+                <td id="bee"><%= bee %></td>
+            </tr>
+            <tr>
+                <td>EDC Lab</td>
+                <td id="beeLab_c"><%= beeLab_c %></td>
+                <td id="beeLab"><%= beeLab %></td>
+                
+            </tr>
+            <tr>
+                <td>Math</td>
+                <td id="math_c"><%= math_c %></td>
+                <td id="math"><%= math %></td>
+            </tr>
+            <tr>
+                <td>Bangladesh Studies</td>
+                <td id="bs_c"><%= bs_c %></td>
+                <td id="bs"><%= bs %></td>
+            </tr>
+            <tr>
+                <td>Physics</td>
+                <td id="physices_c"><%= physices_c %></td>
+                <td id="physices"><%= physices %></td>
+            </tr>
+          
+        </tbody>
+    </table>
+
+    
+    <h2 style="text-align: center;">Grade Table</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Category</th>
+                <th>Grade</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Current CGPA</td>
+                <td id="currentSemResult"><%= currentSemResult %></td>
+            </tr>
+            <tr>
+                <td>Previous Semester CGPA</td>
+                <td id="prevSemResult"><%= prevSemResult %></td>
+            </tr>
+            <tr>
+                <td>Total CGPA</td>
+                <td><%= ((prevSemResult + currentSemResult) / 2).toFixed(2) %></td>
+            </tr>
+           
+        </tbody>
+    </table>
+
+>
+    <section class="Copyright">
+        <div>
+            <p>©2023 <a href="https://tsrohit99.github.io/">Rohit Sen </a>| All Rights Reserved</p>
+        </div>
+    </section>
+</body>
+</html>

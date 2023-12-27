@@ -20,5 +20,5 @@ async function handleClick(event) {
   const redirectURL = `http://localhost:5000/students/${id}`;
 
   // Redirect to the constructed URL
-  window.location.href = redirectURL;
+window.open(redirectURL, "_blank");
 }

@@ -57,6 +57,9 @@ a{
     text-decoration: none;
     color: black;
 }
+button{
+    background-color: #b14d55;
+}
     </style>
 </head>
 <body>
@@ -70,7 +73,7 @@ a{
             <li id="email">E-mail : <%= email %></li>
             <li id="bg">Blood Group: <%= bg %></li>
             <li id="sem">Semester : <%= sem %></li>
-            <li id="cgpa">CGPA : <%= cgpa %></li>
+            <li id="cgpa">CGPA : <%= cgpa %> <button onclick="handleClick();">Click for Full Result</button></li> 
             <li id="status">IsContinuing : <%= status %></li>
         </ul>
     </div>
@@ -80,5 +83,13 @@ a{
             <p>©2023 <a href="https://tsrohit99.github.io/">Rohit Sen </a>| All Rights Reserved</p>
         </div>
     </section>
+
+    <script>
+        async function handleClick() {
+        const currentURL = window.location.href; 
+        const resultURL = currentURL + '/result';
+        window.open(resultURL, "_blank");
+        }
+    </script>
 </body>
 </html>
